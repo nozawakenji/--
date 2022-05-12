@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<!-- 優先順位は？ -->
+<body>
+    <div class="container">
+    <div class="item"> <p style="color:#cf2020; font-size:90px;padding-left: 50px;">item</p></div>
+    <div class="item"> item</div>
+    <div class="item"> item</div>
+    <div class="item"> item</div>
+    <div class="item"> item</div>
+    <div class="item"> item</div>
+    <div class="item"> item</div>
+    </div>
+    
+</body>
+<style>
+    .container{
+display: grid;
+grid-template-columns:200px  1fr 1fr 1fr  ;
+gap: 10px; 
+grid-template-rows: 200px 20px;
+}
+    .item{
+        background-color: aqua;
+        color: bisque;
+        font-size: 30px;
+        padding: 10px;
+        /* margin: 10px; */
+    }
+</style>
+</html>

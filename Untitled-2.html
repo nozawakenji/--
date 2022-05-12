@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.position{
+    /* position: relative; */
+border: 50px dotted blueviolet;
+height: 9000px;
+}
+
+.position div{
+    position: fixed;
+    top: 100px;
+    left: 220px;
+    height: 400px;
+    width: 200px;
+    background-color: aquamarine;
+    z-index: 11;
+}
+
+.childbox{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+#child1{
+    top: 300px;
+    left: 20px;
+    background-color: #b1da6f;
+z-index: 10;
+}
+
+#child2{
+    top:100px;
+    left: 420px;
+    background-color: #666666;
+    z-index: 0;
+	border-radius: 50%;
+}
+#child3{
+    top:500px;
+    left: 200px;
+    background-color: #2446df;
+    z-index: 0;
+	border-radius: 50%;
+    content: "";
+  position: absolute;
+  width: 90;
+  height: 30;
+  right: 3px;
+  bottom: 3px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ef887e;
+  border-width: 100px 0 100px 170.32px;
+  transform: rotate(45deg);
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+<div id="parent">
+    <div id="child1" class="childbox">child1</div>
+    <div id="child2" class="childbox">child2</div>
+    <div id="child3" class="childbox">child3</div>
+</div>
+
+
+
+    <section class="position">
+        <div>位置指定されたdiv要素<br>
+        起点は左上</div>
+    </section>
+</body>
+</html>
